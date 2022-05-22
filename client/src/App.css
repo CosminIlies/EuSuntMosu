@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-green{
+  @apply bg-success px-4 py-2 rounded-md text-secondary font-bold border-solid border-4 border-green-600 shadow-md;
+}
+
+.button-red{
+  @apply bg-primary px-4 py-2 rounded-md text-secondary font-bold border-solid border-4 border-red-700 shadow-md;
+}
+
+.error{
+  @apply fixed top-16 left-0 w-full  bg-primary px-4 py-2 m-0 text-secondary font-bold rounded-b-xl;
+}
+.success{
+  @apply fixed top-16 left-0 w-full  bg-green-500 px-4 py-2 m-0 text-secondary font-bold rounded-b-xl;
+}
+
+.link{
+  @apply text-blue-700 underline italic;
+}
+
+input{
+  @apply bg-gray-500 rounded-md shadow-md border-4 border-gray-600 px-4 py-2 m-4 text-secondary;
+}
+
+textarea{
+  @apply bg-gray-500 rounded-md shadow-md border-4 border-gray-600 px-4 py-2 m-4 text-secondary resize-none;
+}
+
+select{
+  @apply bg-gray-500 rounded-md shadow-md border-4 border-gray-600 px-4 py-2 m-4 text-secondary;
+}
+
+.snowflake{
+
+  animation: fall  linear forwards;
+  color:black;
+  position:absolute;
+  top:-20px;
+
+  overflow: scroll;
+  
+}
+#container{
+  width: 100%;
+  height:100%;
+  position: absolute;
+
+  overflow-y: hidden;
+
+}
+@keyframes fall{
+
+  to{
+    transform: translateY(200vh);
+    
+  }
+
+}
